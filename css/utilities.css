@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{  /* this is how to create a simple variabel to be usewd everywhere */
+    --primary-color:#0478ed;
+    --secondary-color:#1c3fa8;
+    --dark-color:#002240;
+    --light-color:#f4f4f4;
+    --success-color:#5cb85c;
+    --error-color:#d0545f;
+}
+
+/* Based Utilities styles */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+
+
+img{
+    width: 100%;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1, 
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.card{
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* hwo this works : 1st is for horizontal shadow right (-)left,2do is vertical 3rd is blur and 4th is color with teh 4 value  being transparancy  */
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+.btn{
+
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid{
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);  /* this measn repeats the columns twice 1 fraction even */
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+     height: 100%;  /*the container grid is inside the showcase which has a height of 400px by using 100% of its heaight it goes to 400px*/
+
+}
+
+/* margin for stats */
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 1.5rem 0;
+}
+.my-3{
+    margin: 2rem 0;
+}
+.my-4{
+    margin: 3rem 0;
+}
+.my-4{
+    margin: 4rem 0;
+}
+
+.m-1{
+    margin: 1rem ;
+}
+.m-2{
+    margin: 1.5rem ;
+}
+.m-3{
+    margin: 2rem ;
+}
+.m-4{
+    margin: 3rem ;
+}
+.m-4{
+    margin: 4rem ;
+}
+
+/* padding for stats */
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 1.5rem 0;
+}
+.py-3{
+    padding: 2rem 0;
+}
+.py-4{
+    padding: 3rem 0;
+}
+.py-5{
+    padding: 4rem 0;
+}
+
+.p-1{
+    padding: 1rem ;
+}
+.p-2{
+    padding: 1.5rem ;
+}
+.p-3{
+    padding: 2rem ;
+}
+.p-4{
+    padding: 3rem ;
+}
+.p-5{
+    padding: 4rem ;
+}
+
+
+/* text sizes */
+.lead{
+    font-size: 20px;
+}
+.sm{
+    font-size: 1rem;
+}
+.md{
+    font-size: 2rem;
+}
+.lg{
+    font-size: 3rem;
+} 
+.xl{
+    font-size: 4rem;
+}
+
+
+
+
+/* to amke hyperlinks white and social icons */
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
+
+
+/* Docs */
+
+/* alert */
+
+.alert{
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+} 
+.alert i{
+    margin-right: 10px;
+}
+.alert-success{
+ background-color: var(--success-color);
+ color: white;
+}
+
+.alert-error{
+    background-color:var(--success-color);
+    color: white;
+   }
